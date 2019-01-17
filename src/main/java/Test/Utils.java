@@ -1,5 +1,8 @@
 package Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,19 +18,9 @@ public class Utils extends BasePage {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.NANOSECONDS);
     }
 
-    public static void explicit_wait(By by) {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.elementToBeClickable(by));
-    }
+    public static void explicitwait(By by) { WebDriverWait wait = new WebDriverWait(driver, 20);wait.until(ExpectedConditions.elementToBeClickable(by)); }
 
-
-    public void explicitywait()
-    {
-
-        driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
-    }
-
-    public static void click_Element(By by) // to click element
+    public static void click_Element(By by)
     {
         driver.findElement(by).click();
     }
@@ -44,24 +37,27 @@ public class Utils extends BasePage {
 
     public static void assert_element(Object actual, Object expected, String message) {//for Assert
         Assert.assertEquals(actual, expected, message);
-
+    }
+    public static void selectByValue(By by, String text)
+    {
+        new Select(driver.findElement(by)).selectByValue(text);
     }
 
     public static void send_keys(By by, String b)// to send element
     {
         driver.findElement(by).sendKeys(b);
     }
+    public static void selectByVisibleText(By element, String name)
+    {new Select(driver.findElement(element)).selectByVisibleText(name);}
 
     public static String get_attriubutes(By by, String b) {
         String attr = driver.findElement(by).getAttribute(b);
         return attr;
-
     }
 
     public static List findElements(By by) {
         List a = driver.findElements(by);
-        return a;
-    }
+        return a; }
 
     public static void wait_UntilClickable(By by) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -79,7 +75,6 @@ public class Utils extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, time);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(by)));
     }
-
     // to wait and click
     public static void waitAndClick(By by, int time) {
         WebDriverWait wait = new WebDriverWait(driver, time);
@@ -90,7 +85,6 @@ public class Utils extends BasePage {
     public static void selectByIndex(By element, int numb)
     {new Select(driver.findElement(element)).selectByIndex(numb);
     }
-
     //get text from given location
     public static String getText(By by) {
         driver.findElement(by).isDisplayed();
@@ -109,5 +103,14 @@ public class Utils extends BasePage {
         Date date = new Date();
         return format.format( date);
     }
+
+    public void scrollDown(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        // This  will scroll down the page by  1000 pixel vertical
+        js.executeScript("window.scrollBy(0,1000)");
+    }
+    public void alertDismiss(){ driver.switchTo().alert().dismiss(); }
+    public void alertAccept(){ driver.switchTo().alert().accept(); }
+
 
 }

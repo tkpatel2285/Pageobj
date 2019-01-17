@@ -11,77 +11,51 @@ import java.util.List;
 
 public class HomePage extends Utils {
 
-    By clicklogin = By.linkText("Log in");
-    By enteremail = By.id("Email");
-    By enterpassword= By.id("Password");
-    By clickcomputer = By.linkText("Computers");
-    By clickelectronics = By.linkText("Electronics");
-    By clickappareL = By.linkText("Apparel");
-    By clickdownloads = By.linkText("downloads");
-    By clickbooks = By.linkText("Books");
-    By clickjewelry = By.linkText("Jewelry");
-    By clickgiftcard = By.linkText("Gift Cards");
+    By _clicklogin = By.linkText("Log in");
+    By _clickcomputer = By.linkText("Computers");
+    By _clickelectronics = By.linkText("Electronics");
+    By _clickappareL = By.linkText("Apparel");
+    By _clickdownloads = By.linkText("downloads");
+    By _clickbooks = By.linkText("Books");
+    By _clickjewelry = By.linkText("Jewelry");
+    By _clickgiftcard = By.linkText("Gift Cards");
+    By _applemacbook = By.xpath("//div[@class=\"product-grid home-page-product-grid\"]/div[2]/div[2]/div/div[1]");
 
 
 
-
-    public void userDetail()
-    {
-        click_Element(clicklogin);
-        send_keys(enteremail,("tkpatel2285@gmail.com"));
-        send_keys(enterpassword,"Tarun123");
-    }
-
-    public void electronicsButton()
-    {
-        click_Element(clickelectronics);
-
-    }
-
-    public void computerButton(){
-        click_Element(clickcomputer);
-    }
+    public void electronicsButton() { click_Element(_clickelectronics); }
+    public void computerButton(){ click_Element(_clickcomputer); }
     public void appareLButton()
     {
-        click_Element(clickappareL);
+        click_Element(_clickappareL);
     }
     public void booksButton()
     {
-        click_Element(clickbooks);
+        click_Element(_clickbooks);
     }
     public void downloadsButton()
     {
-        click_Element(clickdownloads);
-    }public void jewelryButton()
-    {
-        click_Element(clickjewelry);
-    }public void giftCardButton()
-    {
-        click_Element(clickgiftcard);
+        click_Element(_clickdownloads);
     }
-
-    //    SoftAssert softAssert = new SoftAssert();
-//
-//    public void addtoCartButtonPresent() {
-//        int a = 0;
-//        // Arreylist method to get the list
-//        List<WebElement> addtocart = findElements(By.xpath("// div[@class=\"item-grid\"]/div/div[@class=\"product-item\"]/div[2]/div[3]/div[2]/input[1]"));
-//
-////for each to get the value for "Add to cart button" and increase
-//        for (WebElement b2 : addtocart) {
-//            softAssert.assertEquals("Add to cart", b2.getAttribute("value"));
-//            a++;
-//            System.out.println(b2.getAttribute("Value"));
-//        }
-//
-//        System.out.println("****************************");
-////      compare the actual vs expected addtocart button present
-//        assert_element(addtocart.size(), a, "Test case failed");
-//
-//        System.out.println(addtocart.size() + "");
-//        System.out.println(a + "");
-////        softAssert.assertAll();
-//
-//
-//    }
+    public void jewelryButton()
+    {
+        click_Element(_clickjewelry);
+    }
+    public void giftCardButton()
+    {
+        click_Element(_clickgiftcard);
+    }
+    public void clickOnLogIn()
+    {
+        click_Element(_clicklogin);
+    }
+    public void changeCurrencyToDollar()
+    {
+        selectByVisibleText(By.id("customerCurrency"),"US Dollar");
+    }
+    public void changeCurrencyToEuro() {
+        selectByVisibleText(By.id("customerCurrency"), "Euro");
+    }
+    public void appleMacBook(){ click_Element(_applemacbook); }
 }
+

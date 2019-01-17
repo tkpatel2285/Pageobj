@@ -1,4 +1,5 @@
 package Test;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
@@ -14,25 +15,30 @@ public class BaseTest extends Utils
 
     public void before()
     {
+            chrome_Driver();
 
-        chrome_Driver();
     }
 
-//    @AfterMethod
-//    public void after(ITestResult result) {
-////        if (ITestResult.FAILURE == result.getStatus()) {
-////            try {
-////                TakesScreenshot ts = (TakesScreenshot) driver;
-////                File source = ts.getScreenshotAs(OutputType.FILE);
-////                 i dont know why its showing red= FileUtils.copyFile(source, new File("src\\main\\java\\Screenshots" + result.getName() + ".png"));
-////                System.out.println("Screenshot taken");
-////            } catch (Exception e) {
-////                System.out.println("exception while taking Screenshot " + e.getMessage());
-////            }
-////
-////        }
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void after(ITestResult result)
+    {
+        if (ITestResult.FAILURE == result.getStatus())
+        {
+            try
+            {
+                TakesScreenshot ts = (TakesScreenshot) driver;
+                File source = ts.getScreenshotAs(OutputType.FILE);
+                  FileUtils.copyFile(source, new File("src\\test\\java\\Resources\\Driver\\Screenshot" + result.getName() + ".png"));
+                System.out.println("Screenshot taken");
+            }
+            catch (Exception e)
+            {
+                System.out.println("exception while taking Screenshot " + e.getMessage());
+            }
+
+        }
+        driver.quit();
+    }
 
 
 

@@ -9,11 +9,14 @@ import java.util.List;
 public class Jewellery extends Utils
 
 {
+
+    HomePage homepage = new HomePage();
     SoftAssert softAssert = new SoftAssert();
+
     public void dollorToEuro(){
 
-        click_Element(By.linkText("Jewelry" ));
-        click_Element(By.xpath("//div[@class=\"currency-selector\"]/select/option[2]"));
+        homepage.changeCurrencyToEuro();
+        homepage.jewelryButton();
         List<WebElement> list = findElements(By.xpath("//div[@class=\"item-grid\"]/div[1]/div/div[2]/div[3]/div[1]/span"));
         for (WebElement ab: list) {
             String symbol = ab.getText();

@@ -5,32 +5,46 @@ import org.testng.annotations.Test;
 
 public class TestSuit extends BaseTest
 {
-    BuyingProduct a1 = new BuyingProduct();
+    AddTOCartButton addtocartbutton = new AddTOCartButton();
+    BuyingProduct buyingproduct = new BuyingProduct();
     RegisterPage usershouldberegister = new RegisterPage();
     UserShouldBeSentEmailSuccessfully userShouldBeSentEmailSuccessfully = new UserShouldBeSentEmailSuccessfully();
     UnregisterShouldNotbeAbleToSendEmail unreg = new UnregisterShouldNotbeAbleToSendEmail();
-    ShoppingCart shopingcart = new ShoppingCart();
+    ShoppingCartPage shopingcart = new ShoppingCartPage();
     HighPriceToLow highpricetolow = new HighPriceToLow();
-    HomePage a2 = new HomePage();
-    Jewellery a3 = new Jewellery();
+    HomePage homepage = new HomePage();
+    Jewellery jewellery = new Jewellery();
+    LogInButton loginbutton = new LogInButton();
+    CheckOutPage checkoutpage = new CheckOutPage();
+    CreditCardDetailsPage creditcard = new CreditCardDetailsPage();
+    BrowserSetUp browsr = new BrowserSetUp();
+
+    private final static String expectedPaymentConfirmation  = "Your order has been successfully processed!";
+
+@Test
+public void browSet(){browsr.selectBrowser();}
+    @Test
+    public void addtoCartButtonPresentInHomepage() {
+
+    addtocartbutton.addtoCartButtonPresent(); }
 
     @Test
-    public void buyingProductSuccesfully() {
-        a1.buying();
-
-    }
+    public void buyingProductSuccesfully() { buyingproduct.buying();
+        creditcard.userShouldBeAbleToEnterCardDetails(); }
 
     @Test
     public void userShouldBeRegistersucessfullygkkkk()//for register new user
     {
         usershouldberegister.registerNewUser();
-        click_Element(By.linkText("Log out"));
+        loginbutton.userLogOut();
     }
 
     @Test
     public void userShouldEmailSuccessfullyToFriend()//for send an email for product to friend with valid login
     {
         userShouldBeSentEmailSuccessfully.UserShouldBeSentEmailSuccessfully();
+        loginbutton.userLogOut();
+
 
     }
 
@@ -43,7 +57,7 @@ public class TestSuit extends BaseTest
     @Test
     public void termsConditions()//terms n condition needs to accept
     {
-        shopingcart.ClickTermsCondition();
+        shopingcart.acceptTermsAndConditions();
     }
 
 
@@ -52,17 +66,11 @@ public class TestSuit extends BaseTest
         highpricetolow.SortThePriceHighToLow();
     }
 
-    @Test
-    public void addtoCartButtonPresentInHomepage()
 
-    {
-        a2.userDetail();
-        click_Element(By.linkText("Log out"));
-    }
     @Test
     public void jewelleryEuroTodollor(){
 
-        a3.dollorToEuro();
+        jewellery.dollorToEuro();
     }
 
 
