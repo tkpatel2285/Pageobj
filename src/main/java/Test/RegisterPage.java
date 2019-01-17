@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class RegisterPage extends Utils{
 
-
+            LoadProp lodprop = new LoadProp();
 
         By register         = By.linkText("Register");//click on register page
         By gender           = By.id("gender-male");//select gender
@@ -30,17 +30,16 @@ public class RegisterPage extends Utils{
 
         click_Element(register);
         click_Element(gender);
-        send_keys(firstname,("Tarun"));
-        send_keys(lastname,("Patel"));
+        send_keys(firstname,lodprop.getproperty("Firstname"));
+        send_keys(lastname,lodprop.getproperty("Lastname"));
         click_Element(dateofbirth);
         click_Element(monthofbirth);
         click_Element(yearofbirth);
-
-       send_keys(enteremail,"tkpatel22851789+" +timestampLong() + "@gmail.com");
-       send_keys(company,("Shreeji Ltd"));
+        send_keys(enteremail,"tkpatel22851789+" +timestampLong() + "@gmail.com");
+        send_keys(company,lodprop.getproperty("CompanyName"));
         click_Element(newsletter);
-        send_keys(password,("Tkpat1"));
-        send_keys(reenterpassword,("Tkpat1"));
+        send_keys(password,lodprop.getproperty("Password"));
+        send_keys(reenterpassword,lodprop.getproperty("Password"));
         click_Element(clickregister);
         String actualRegisterSuccessMessage = driver.findElement(By.xpath("//div[@class='result']")).getText();//expected result"Your registration completed"
         // actual result "Your registration completed"
