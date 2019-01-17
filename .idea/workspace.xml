@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3711f6-a34e-4df0-af77-03977942c602" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestData/TestDataConfig.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/AddTOCartButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/BrowserSetUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/CheckOutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/CreditCardDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/LoadProp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/LogInButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/ShoppingCartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/TestDataConfig.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Test/CheckOutPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Test/CreditCardDetailsPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Test/LoadProp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Test/LogInButton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Test/ShoppingCartPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/BuyingProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/BuyingProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/HighPriceToLow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/HighPriceToLow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/Jewellery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/Jewellery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/PageLoad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/ShoppingCart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/UnregisterShouldNotbeAbleToSendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/UnregisterShouldNotbeAbleToSendEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/UserShouldBeSentEmailSuccessfully.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/UserShouldBeSentEmailSuccessfully.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test/TestSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/TestSuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/BuyingProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/BuyingProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/HighPriceToLow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/HighPriceToLow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/Jewellery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/Jewellery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/PageLoad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/ShoppingCart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/UnregisterShouldNotbeAbleToSendEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/UnregisterShouldNotbeAbleToSendEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/UserShouldBeSentEmailSuccessfully.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/UserShouldBeSentEmailSuccessfully.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test/TestSuit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test/TestSuit.class" afterDir="false" />
-    </list>
+    <list default="true" id="ac3711f6-a34e-4df0-af77-03977942c602" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Test/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="409">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#get_text_Element#0;class#Utils#0" />
@@ -146,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Test/Jewellery.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -355,7 +310,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547685512941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547685999890" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -746,7 +701,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Test/Jewellery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -813,7 +768,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Test/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#get_text_Element#0;class#Utils#0" />
